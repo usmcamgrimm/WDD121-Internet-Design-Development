@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+	Adrian Grimm
+	Chapter 9 Quiz
+-->
+<head>
+	<title>Grimm_Chapt9Quiz</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+	@import url('https://fonts.googleapis.com/css?family=Metamorphous|Ubuntu');
+	body { background-image: url(background.jpg);
+		   background-repeat: no-repeat;
+		   background-color: #001219;
+	       background-repeat: no-repeat;
+	       background-size: 100%;
+	       color: #00384c;
+	       font-family: 'Ubuntu'; }
+	h1 { font-family: 'Ubuntu';
+	     font-size: 3em;
+	     font-weight: bold;
+	     color: #00bbff;
+	     padding-left: 100px;
+	     text-shadow: 5px 5px 6px #000000; }
+	form { background-image: linear-gradient(to bottom right, #ffffff, #007099);
+	       border: 2px solid #000000;
+	       border-radius: 5px;
+	       padding: 10px;
+	       box-shadow: 8px 8px 10px #212121; }
+	#wrapper { margin-left: auto;
+	           margin-right: auto;
+	           width: 800px; }
+</style>
+</head>
+<body>
+	<header>
+		<h1>Music Survey</h1>
+	</header>
+		<div id="wrapper">
+	<main>
+		<form method="post" action="http://webdevbasics.net/scripts/JavaJam8.php">
+			<label for="myName">Name:</label>
+			<input type="text" name="myName" id="myName">
+			<label for="myEmail">Email:</label>
+			<input type="text" name="myEmail" id="myEmail">
+			<br>
+			<p>Select your favorite type of music:</p>
+			<input type="checkbox" name="Pop" id="Pop" value="yes">Pop
+			<input type="checkbox" name="classical" id="classical" value="yes">Classical
+			<input type="checkbox" name="rock" id="rock" value="yes">Rock
+			<input type="checkbox" name="metal" id="metal" value="yes">Metal
+			<input type="checkbox" name="folk" id="folk" value="yes">Folk
+			<input type="checkbox" name="rap" id="rap" value="yes">Rap
+			<br>
+			<p>Select how often you purchase music CDs:</p>
+			<input type="radio" name="purchase" id="weekly" value="weekly">Weekly
+			<input type="radio" name="purchase" id="year" value="yearly">A few CDs each year
+			<input type="radio" name="purchase" id="monthly" value="monthly">Monthly
+			<input type="radio" name="purchase" id="never" value="never">Never Purchase
+			<br>
+			<p>Select the locations you listen to music:</p>
+			<select size="4" name="location" id="location">
+				<option value="None">None</option>
+				<option value="At Home">At Home</option>
+				<option value="In the car">In the car</option>
+				<option value="Anywhere">Anywhere (MP3 Player)</option>
+			</select>
+			<br>
+			<p>What role does music play in your life?</p>
+			<textarea name="myComments" id="myComments" rows="5" cols="60"></textarea>
+			<br>
+			<input id="mySubmit" type="submit" value="submit">
+			<input id="myReset" type="reset" value="reset">
+		</form>
+	</main>
+</div>
+</body>
+</html>
